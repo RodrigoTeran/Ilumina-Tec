@@ -1,0 +1,74 @@
+h1{
+    font-size: 3.5em;
+}
+
+.dashboard_wrapper {
+    padding: 0 80px;
+    margin-top: 70px;
+    width: 100%;
+}
+@media screen and (max-width: 450px) {
+    .dashboard_wrapper {
+        padding: 0 5vw;
+    } 
+}
+
+.dashboard_wrapper_statistics {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    flex-wrap: wrap; /*Si se desborda, se pasa abajo*/
+    padding-right: 50px;
+    width: 100%;
+
+}
+.dashboard_wrapper_statistics .stat {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10000px;
+    background-color: rgb(135, 255, 183);
+ 
+}
+.dashboard_grid {
+    width: 100%;
+    margin-top: 53px;
+    display: grid;
+    column-gap: 70px;
+    row-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: space-between;
+}
+
+
+.dashboard_grid .card {
+    width: 100%;
+    height: 140px;
+    padding: 20px 20px;
+    border: 2px solid rgb(174, 174, 174);
+    border-radius: 14px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card .wrapper_card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .card_foco{
+    width: 30px;
+    height: 30px;
+    border-radius: 10000px;
+    background-color: rgb(0, 229, 92);
+    
+}
+
+.card h2{
+    font-size: 1.4em;
+}
