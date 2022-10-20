@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    width: 100vw; /*Bpdy abarque todo el ancho de la pantalla*/
+    height: 100%; /*Abarque el 100% de la altura*/
+    position: relative; /*Es un punto de referencia para establecer coordenadas*/
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0;
+
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+h2{
+    font-size: 1.7em;
+}
+
+p{
+    font-size: 1em;
+}
+
+button.datos{ /*Falta alinear texto a la izquierda*/
+    text-align: left;
+    font-size: 0.8em;
+    font-weight: lighter;
+    padding: 6px 11px;
+    border-radius: 5px;
+    border: 1px solid rgb(120, 120, 120);
+    color: rgb(120, 120, 120);
+    background-color: white;
+}
+
+button.datos:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+
+button.ingresar{
+    align-items: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 8px 50px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    background-color: rgb(82, 255, 151);
+}
+
+button.ingresar:hover{
+    background-color: rgb(135, 255, 183);
+}
+
+button.iniciar{
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 8px 23px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    background-color: rgb(82, 255, 151);
+}
+
+button.iniciar:hover{
+    background-color: rgb(135, 255, 183);
+}
+
+
+.container{
+    margin: auto;
+}
+
+.Color_primario{
+    color:rgb(0, 229, 92);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 25px;
+    width: 100%;
+    height: 70px;
+    background-color:white;
+}
+
+nav .logo{
+    font-weight: bold;
+    color:rgb(0, 229, 92);
+    font-size: 1.2em;
+}
+section{
+    height: 100vh;
+}
+
+#SomosIlumina-Tec .container h1, #SomosIlumina-Tec .container p{
+    background-color: red;
+}
+
+#Log{
+    padding-top: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Log h2{
+    font-size: 1.3em;
+}
+#Log .container{ 
+    padding: 50px 40px;
+    box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+#Log .botones{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+#Log .image-container{
+    background-image:url("Media/Light-bulb-amico.svg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 300px;
+}
+
+#Log .botones{
+    padding-top: 20px;
+}
+
+#Log .Log-in {
+    padding: 20px 25px 0px 25px;
+    box-shadow: 0 0 25px -5px rgba(0,0,0,0.25);
+    background-color: white;
+}
+
+.Log-in button{
+    display: flex;
+    flex-direction: column;
+    margin: 9px 0px;
+}
+
+@media(min-width: 720px){
+   section{
+        padding-top: 70px;
+
+    }
+    #SomosIlumina-Tec{
+        width: 55%;
+    }
+    #SomosIlumina-Tec .container{
+        align-items: left;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 30%;
+        left: 10%;
+        transform: translate(0, -30%);
+    }
+
+    #SomosIlumina-Tec .image-container{
+        background-image:url("Media/Light-bulb-amico.svg");
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        width: 300px;
+    }
+
+    #Log{
+        width: 45%;
+    }
+    
+}
