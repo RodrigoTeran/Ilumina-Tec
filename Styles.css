@@ -163,6 +163,7 @@ section {
         height: fit-content;
     }
     #Quienes-Somos {
+        padding: 0;
         align-items: center;
     }
     #Log-in {
