@@ -7,12 +7,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="modal.css">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Ilumina-Tec</title>
 </head>
 
 <body>
+    <div class="modal">
+        <div class="modal_card">
+            <svg class="modal_card_svg" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 1L13 12" stroke="#787878" stroke-width="2" />
+                <path d="M12 1L1 12" stroke="#787878" stroke-width="2" />
+            </svg>
+            <div class="modal_card_header">
+                <div class="modal_card_header_title">
+                    Comedor
+                </div>
+                <div class="modal_card_header_foco">
+                </div>
+            </div>
+            <div class="modal_card_subtitle">
+                Agenda
+            </div>
+            <div class="modal_card_container">
+                <div class="modal_card_grid_element">
+                    <div class="modal_card_grid_element_hour">
+                        4pm - 5pm
+                    </div>
+                    <div class="modal_card_grid_element_foco">
+                    </div>
+                    <div class="modal_card_grid_element_trash">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M6 7H5v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7H6zm4 12H8v-9h2v9zm6 0h-2v-9h2v9zm.618-15L15 2H9L7.382 4H3v2h18V4z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal_card_grid_element">
+                    <div class="modal_card_grid_element_hour">
+                        5pm - 6pm
+                    </div>
+                    <div class="modal_card_grid_element_foco">
+                    </div>
+                    <div class="modal_card_grid_element_trash">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M6 7H5v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7H6zm4 12H8v-9h2v9zm6 0h-2v-9h2v9zm.618-15L15 2H9L7.382 4H3v2h18V4z">
+                            </path>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="modal_card_grid_element">
+                    <div class="modal_card_grid_element_hour">
+                        6pm - 7pm
+                    </div>
+                    <div class="modal_card_grid_element_foco">
+                    </div>
+                    <div class="modal_card_grid_element_trash">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M6 7H5v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7H6zm4 12H8v-9h2v9zm6 0h-2v-9h2v9zm.618-15L15 2H9L7.382 4H3v2h18V4z">
+                            </path>
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal_card_btns">
+                <button class="modal_card_btns_add">Añadir</button>
+                <button class="modal_card_btns_delete">Eliminar</button>
+            </div>
+        </div>
+    </div>
     <nav>
         <p class="Logo">Ilumina-Tec</p>
         <form action="">
@@ -33,78 +102,78 @@
         <div class="dashboard_grid">
             <div class="card">
                 <div class="wrapper_card">
-                <h2>Habitación 1</h2>
-                <div class="card_foco"></div>  
+                    <h2>Habitación 1</h2>
+                    <div class="card_foco"></div>
                 </div>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="card">
                 <div class="wrapper_card">
-                <h2>Habitación 2</h2>
-                <div class="card_foco"></div>  
+                    <h2>Habitación 2</h2>
+                    <div class="card_foco"></div>
                 </div>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="card">
                 <div class="wrapper_card">
-                <h2>Habitación 3</h2>
-                <div class="card_foco"></div>  
+                    <h2>Habitación 3</h2>
+                    <div class="card_foco"></div>
                 </div>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="card">
                 <div class="wrapper_card">
-                <h2>Habitación 4</h2>
-                <div class="card_foco"></div>  
+                    <h2>Habitación 4</h2>
+                    <div class="card_foco"></div>
                 </div>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="card">
                 <div class="wrapper_card">
-                <h2>Sala</h2>
-                <div class="card_foco"></div>  
+                    <h2>Sala</h2>
+                    <div class="card_foco"></div>
                 </div>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="card">
                 <div class="wrapper_card">
-                <h2>Comedor</h2>
-                <div class="card_foco"></div>  
+                    <h2>Comedor</h2>
+                    <div class="card_foco"></div>
                 </div>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="card">
                 <div class="wrapper_card">
-                <h2>Garage</h2>
-                <div class="card_foco"></div>  
+                    <h2>Garage</h2>
+                    <div class="card_foco"></div>
                 </div>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="card">
                 <div class="wrapper_card">
-                <h2>Roof Garden</h2>
-                <div class="card_foco"></div>  
+                    <h2>Roof Garden</h2>
+                    <div class="card_foco"></div>
                 </div>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="card">
                 <div class="wrapper_card">
-                <h2>Sala de juegos</h2>
-                <div class="card_foco"></div>  
+                    <h2>Sala de juegos</h2>
+                    <div class="card_foco"></div>
                 </div>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="card">
                 <div class="wrapper_card">
-                <h2>Alberca</h2>
-                <div class="card_foco"></div>  
+                    <h2>Alberca</h2>
+                    <div class="card_foco"></div>
                 </div>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="card">
                 <div class="wrapper_card">
-                <h2>Cancha de tennis</h2>
-                <div class="card_foco"></div>  
+                    <h2>Cancha de tennis</h2>
+                    <div class="card_foco"></div>
                 </div>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
